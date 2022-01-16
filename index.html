@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/fysmlogo.svg" rel="icon" sizes="192x192" type="image/png">
+    <title>Flexify</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/colours.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/flexify-responsive.css">
+
+</head>
+<body>
+    <nav class="d-flex align-center justify-space-between">
+        <div id="nav-links" class="d-flex align-center">
+            <a href="#docs">Docs</a>
+        </div>
+        <div id="nav-theme">theme switch</div>
+    </nav>
+    <div class="container">
+        <img id="logo" src="img/fylogo.svg" alt="flexify">
+        <p class="h5" style="text-align: center; margin-top: .4em;">A simple CSS library to easy include flex properties in your layout.</p>
+    </div>
+
+    <div class="container" style="margin-top: 1.3em;">
+        <h1>Getting Started With Flexify</h1>
+        <p>
+            Before start I recommend use <a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank">reset.css</a> or similar library for more consistent results. Choose one of the variants and include 
+            it in your project.
+        </p>
+        <div class="d-flex">
+            <div id="full-version" class="card d-flex flex-column align-center justify-center">
+                <p class="h4">Full version</p>
+                <p>
+                    Flexify full version include all flex utilities for flexboxes (as clases) with breakpoints for better control in responsive
+                    websites (based on <a href="#breakpoints">bootstrap breakpoints</a>).
+                </p>
+            </div>
+            <div id="lite-versions" class="d-flex flex-column">
+                <div id="lite-classes" class="card d-flex flex-column align-center">
+                    <p class="h4">lite</p>
+                    <p>Lite flexify include all basic utilities ut doesn't include responsive breakpoints so you will have to do manually 
+                        any variant for responsive pages.</p>
+                </div>
+                <div id="lite-divs" class="card d-flex flex-column align-center">
+                    <p class="h4">lite div-forced</p>
+                    <p>Includes the same as the lite version but this version change the display property of the divs to flex so you don't have
+                        to add d-flex classes on all divs </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top: 1.3em;">
+        <p class="h1">Docs</p>
+        <p style="margin-bottom: .6em;">
+            Flexify its a CSS library that include basic utilities to create layouts based on flexboxes. 
+        </p>
+        <div class="alert">
+            <p>There are not active utilities for <b>flex-basis</b>, <b>flex-shrink</b> and <b>flex-grow</b> properties. You can (sholud) 
+                add manually these properites to your flex components. You can check <a href="#faq">faq</a> for more info</p>
+        </div>
+
+        <div id="guide" style="margin-top: .6em;">
+            <div class="table">
+                <div class="row">
+                    <div class="col-name"><p>.d-flex</p></div>
+                    <div class="col-desc"><p>set <b>display: flex</b> to the element. The default direction is <b>row</b></p></div>
+                </div>
+                <div class="row">
+                    <div class="col-name"><p>.flex-column</p></div>
+                    <div class="col-desc"><p>Changes the direction to column</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-name"><p>.justify-center</p></div>
+                    <div class="col-desc"><p>set <b>justify-content: center</b> property</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-name"><p>.justify-start</p></div>
+                    <div class="col-desc"><p>set <b>justify-content: flex-start</b> property</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-name"><p>.justify-end</p></div>
+                    <div class="col-desc"><p>set <b>justify-content: flex-end</b> property</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-name"><p>.justify-space-around</p></div>
+                    <div class="col-desc"><p>set <b>justify-content: space-around</b> property</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-name"><p>.justify-space-between</p></div>
+                    <div class="col-desc"><p>set <b>justify-content: space-between</b> property</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-name"><p>.justify-unset</p></div>
+                    <div class="col-desc"><p>set <b>justify-content: unset</b> property</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-name"><p>.align-center</p></div>
+                    <div class="col-desc"><p>set <b>align-items: center</b> property</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-name"><p>.align-start</p></div>
+                    <div class="col-desc"><p>set <b>align-items: flex-start</b> property</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-name"><p>.align-end</p></div>
+                    <div class="col-desc"><p>set <b>align-items: flex-end</b> property</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-name"><p>.align-unset</p></div>
+                    <div class="col-desc"><p>set <b>align-items: unset</b> property</p></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
